@@ -9,7 +9,7 @@ nav{
 }
 
 ul{
-
+text-align: center;
 }
 
 ul li {
@@ -27,3 +27,18 @@ ul li a {
 	padding: 0 20px;
 }
 
+ul li a:hover {
+font-weight: bolder;
+}
+
+logo img{
+	margin-left: 300px;
+}
+
+
+h1{
+
+font-size: 140px;
+font-family: playfair display;
+
+}
