@@ -33,11 +33,15 @@ ul li a:hover {
 }
 
 .logo{
+	height: 90px;
 	position: relative;
 	bottom: 235px;
 	left: 30px;
 }
 
+.nav{
+	height: 100px;
+}
 
 h4{
 font-size: 17px;
@@ -56,7 +60,50 @@ bottom: 60px;
 }	
 
 
-p {
+p{
 font-size: 12px;
 font-family: avenir;
+}
+
+.cover{
+	height: 1150px;
+}
+.coverbillede{
+position: relative;
+top: 40px;
+}
+
+
+h1{
+	font-size: 140px;
+	font-family: playfair display;
+	color: white;
+	text-align: center;
+	position: relative;
+	bottom: 800px;
+}
+
+h3{
+	font-size: 25px;
+	font-family: playfair display;
+	color: white;
+	position: relative;
+	bottom: 814px;
+	left: 811px;
+
+}
+
+.line{
+	position: relative;
+	bottom: 917px;
+	left: 748px;
+}
+
+
+.line_2{
+	width: 1920px;
+	position: relative;
+	bottom: 640px;
+	left: 960px;
+
 }
