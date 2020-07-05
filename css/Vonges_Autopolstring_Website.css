@@ -60,13 +60,14 @@ bottom: 60px;
 }	
 
 
-p{
+.nav p{
 font-size: 12px;
 font-family: avenir;
 }
 
 .cover{
 	height: 1150px;
+	padding-bottom: 50px;
 }
 .coverbillede{
 position: relative;
@@ -107,3 +108,44 @@ h3{
 	left: 960px;
 
 }
+
+
+
+
+
+
+
+
+
+
+h2{
+	height: 350px;
+	font-size: 35px;
+	font-family: playfair display;
+	position: relative;
+	top: 210px;
+	left: 350px;
+	
+
+
+
+}
+
+.historie p{
+	font-family: avenir;
+	font-size: 14px;
+	text-align: center;
+	padding-right: 30px;
+	position: relative;
+	bottom: 165px;
+	left: 480px;
+	line-height: 17px;
+	padding-bottom: 15px;
+
+
+}
+
+
+
+
+
