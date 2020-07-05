@@ -106,7 +106,10 @@ h3{
 	position: relative;
 	bottom: 640px;
 	left: 960px;
+}
 
+.symaskine{
+	height: 740px;
 }
 
 
@@ -125,10 +128,6 @@ h2{
 	position: relative;
 	top: 210px;
 	left: 350px;
-	
-
-
-
 }
 
 .historie p{
@@ -141,11 +140,34 @@ h2{
 	left: 480px;
 	line-height: 17px;
 	padding-bottom: 15px;
-
-
 }
 
 
+
+
+.bilkaleche{
+	position: relative;
+	bottom: 4px;
+}
+
+
+.text1 p{
+	font-family: avenir;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	bottom: 700px;
+	left: 480px;
+	line-height: 17px;
+	padding-bottom: 15px;
+}
+
+
+.overskrift1 h2{
+	position: relative;
+	bottom: 700px;
+	left: 480px;
+}
 
 
 
