@@ -8,6 +8,7 @@
 	margin: 0px;
 	padding-bottom: 0px;
 	width: 1920px;
+	padding: 0px;
 }
 
 li a {
@@ -97,13 +98,15 @@ body{
 	position: relative;
 	left: 811px;
 	top: 265px;
+	width: 200px;
+	box-sizing: border-box;
 }
-
 
 .line{
 	position: relative;
 	left: 750px;
-	top: 135px;
+	top: 138px;
+	width: 100px;
 }
 
 .line_2{
@@ -111,11 +114,57 @@ body{
 position: relative;
 	left: 960px;
 	top: 435px;
+	width: 100px;
 }
+
+.historie{
+	margin: 0;
+	height: 350px;
+}
+
+
+ul li h2{
+	height: 350px;
+	font-size: 30px;
+	font-family: playfair display;
+	width: 960px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 300px; 
+}
+
+ul li p{
+	text-align: center;
+	font-family: avenir;
+	font-size: 14px;
+	width: 960px;
+	line-height: 17px;
+	padding-bottom: 10px;
+	position: relative;
+	top: 120px;
+}
+
+ul li{
+	height: 350px;
+	padding: 0px;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.htext{
+	vertical-align: middle;
+	line-height: 370px; 
+}
+
+
 
 .billede_1 img{
 	width: 1920px;
 }
+
 
 
 
