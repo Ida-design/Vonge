@@ -76,7 +76,8 @@ body{
 	background-image: url(../img/Coverbillede_1920x1150px.jpeg);
 	background-size: 1920px;
 	background-repeat: no-repeat;
-	background-position: center;	
+	background-position: center;
+	height: 1150px;	
 }
 
 .cover_text h1{
@@ -85,13 +86,39 @@ body{
 	color: white;
 	text-align: center;
 	margin: 0px;
+	position: relative;
+	top: 300px;
 }
 
 .cover_text h3{
 	font-size: 25px;
 	font-family: playfair display;
 	color: white;
+	position: relative;
+	left: 811px;
+	top: 265px;
 }
+
+
+.line{
+	position: relative;
+	left: 750px;
+	top: 135px;
+}
+
+.line_2{
+	
+position: relative;
+	left: 960px;
+	top: 435px;
+}
+
+.billede_1 img{
+	width: 1920px;
+}
+
+
+
 
 
 header, footer{

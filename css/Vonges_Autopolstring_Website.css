@@ -17,6 +17,7 @@
 }
 
 .nav ul li {
+	list-style: none;	
 	display: inline-block;
 	line-height: 140px;
 }
@@ -108,9 +109,8 @@ h3{
 
 .line_2{
 	width: 1920px;
-	position: relative;
-	bottom: 640px;
-	left: 960px;
+vertical-align: center;
+
 }
 
 .symaskine{
