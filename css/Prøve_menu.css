@@ -1,0 +1,99 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+</style>
+	
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding-bottom: 0px;
+	width: 1920px;
+}
+
+li a {
+	font-family: avenir;
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+}
+
+
+li a:hover{
+	font-weight: bolder; 
+	transition: all 0,5s ease 0s;
+}
+
+
+.logo{
+	height: 90px;
+	width: 90px;
+}
+
+
+h4{
+	font-family: playfair display;
+	font-size: 20px;
+	padding bottom: 14px;
+	margin: 0px;
+	text-align: right;
+}
+
+
+p{
+	font-family: avenir;
+	font-size: 12px;
+	line-height: 15px;
+	margin:0px;
+	padding-top: 10px;
+	text-align: right;
+}
+
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 2%;
+	width: 1920px;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+
+
+body{
+	width: 1920px;
+	margin: 0px;
+}
+
+
+.cover_text{
+	background-image: url(../img/Coverbillede_1920x1150px.jpeg);
+	background-size: 1920px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.cover_text h1{
+	font-size: 140px;
+	font-family: playfair display;
+	color: white;
+	text-align: center;
+	margin: 0px;
+}
+
+.cover_text h3{
+	font-size: 25px;
+	font-family: playfair display;
+	color: white;
+}
+
+
+header, footer{
+	flex: none;
+}
