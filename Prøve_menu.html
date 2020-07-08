@@ -1,13 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		
-
-		
-	</title>
+	<meta charset="utf-8">
+	<title>slideshow</title>
+	<link rel="stylesheet" type="text/css" href="css/Prøve_menu.css">
 </head>
 <body>
 
+
+  <div id='container'>
+  
+    <input type='radio' name="image" id='inp1' checked>
+    <input type='radio' name="image" id='inp2' >
+    <input type='radio' name="image" id='inp3'>
+    
+    <div class='images' id='one'>
+      <img src='img/Bilkaleche_1_960x740px.jpeg'>
+      
+      <label for='inp3' class='prev'></label>
+      <label for='inp2' class='next'></label>
+    </div>
+        
+    <div class='images' id='two'>
+      <img src='img/Bilkaleche_2_960x740px.jpeg'>
+      
+      <label for='inp1' class='prev'></label>
+      <label for='inp3' class='next'></label>
+    </div>
+        
+    <div class='images' id='three'>
+      <img src='img/Bilkaleche_3_960x740px.jpeg'>
+      
+      <label for='inp2' class='prev'></label>
+      <label for='inp1' class='next'></label>
+    </div>
+    
+    <div id='nav'>
+      <label class='dots' id='dot1' for='inp1'></label>
+      <label class='dots' id='dot2' for='inp2'></label>
+      <label class='dots' id='dot3' for='inp3'></label>
+    </div>
+  </div>
+
 </body>
+<footer></footer>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
