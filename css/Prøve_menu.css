@@ -39,6 +39,7 @@ body {
 }
 
 .prev:hover, .next:hover {
+  cursor: pointer;
   /* background: rgba(10, 10, 10, .5);*/
 }
 
@@ -71,7 +72,7 @@ body {
  *background: rgba(245, 245, 245, .7);
 }
 
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten {
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
   z-index: -1;
 }
 
@@ -83,8 +84,7 @@ body {
 #inp6:checked ~ #six,
 #inp7:checked ~ #seven,
 #inp8:checked ~ #eight,
-#inp9:checked ~ #nine,
-#inp10:checked ~ #ten {
+#inp9:checked ~ #nine {
   z-index: 10;
 }
 
@@ -96,24 +96,26 @@ body {
 #inp6:checked ~ #nav #dot6,
 #inp7:checked ~ #nav #dot7,
 #inp8:checked ~ #nav #dot8,
-#inp9:checked ~ #nav #dot9,
-#inp10:checked ~ #nav #dot10 {
+#inp9:checked ~ #nav #dot9 {
   background: white;
   opacity: 70%;
 }
 
 
+.arrow:hover{
+  cursor: pointer;
+}
 
 .arrow {
   border: solid white;
-  border-width: 0 8px 8px 0;
+  border-width: 0 6px 6px 0;
   display: inline-block;
   padding: 10px;
   color: white;
   opacity: 70%;
   margin: 0px;
-  z-index:20; 
-
+  z-index:11; 
+  
 }
 
 .right {
@@ -126,15 +128,11 @@ body {
 
 .left {
   transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
   position: relative;
   top: 400px;
   right: 0px;
 }
 
-.div{
-  margin: 0px;
-}
 
 
 
