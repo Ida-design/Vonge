@@ -6,7 +6,7 @@ body {
   width: 960px;
   height: 740px;
   position: relative;
-  background: rgba(80, 80, 80, .5);
+  margin: 0px;
 }
 
 
@@ -23,21 +23,23 @@ body {
 .images img {
   width: 100%;
   height: 100%;
+  margin: 0px;
 }
 
 .prev, .next {
   height: 100%;
   width: 12%;
-  background: rgba(10, 10, 10, .3);
+  /*background: rgba(10, 10, 10, .3);*/
   position: absolute;
   top: 0;
-  cursor: pointer;
+  /*cursor: pointer;*/
   transition: .15s;
   z-index: 100;
+  margin: 0px;
 }
 
 .prev:hover, .next:hover {
-  background: rgba(10, 10, 10, .5);
+  /* background: rgba(10, 10, 10, .5);*/
 }
 
 .prev { left:  0 }
@@ -66,65 +68,90 @@ body {
 }
 
 .dots:hover {
-  background: rgba(245, 245, 245, .7);
+ *background: rgba(245, 245, 245, .7);
 }
 
-#one, #two, #three {
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten {
   z-index: -1;
 }
 
 #inp1:checked ~ #one,
 #inp2:checked ~ #two,
-#inp3:checked ~ #three {
+#inp3:checked ~ #three,
+#inp4:checked ~ #four,
+#inp5:checked ~ #five,
+#inp6:checked ~ #six,
+#inp7:checked ~ #seven,
+#inp8:checked ~ #eight,
+#inp9:checked ~ #nine,
+#inp10:checked ~ #ten {
   z-index: 10;
 }
 
 #inp1:checked ~ #nav #dot1, 
 #inp2:checked ~ #nav #dot2,
-#inp3:checked ~ #nav #dot3 {
+#inp3:checked ~ #nav #dot3,
+#inp4:checked ~ #nav #dot4,
+#inp5:checked ~ #nav #dot5,
+#inp6:checked ~ #nav #dot6,
+#inp7:checked ~ #nav #dot7,
+#inp8:checked ~ #nav #dot8,
+#inp9:checked ~ #nav #dot9,
+#inp10:checked ~ #nav #dot10 {
   background: white;
+  opacity: 70%;
 }
-
-
-.label{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
+  border: solid white;
+  border-width: 0 8px 8px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 10px;
+  color: white;
+  opacity: 70%;
+  margin: 0px;
+  z-index:20; 
+
 }
 
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  color: 
- 
-
+  position: relative;
+  left: 900px; 
+  top: 400px;
 }
 
 .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  color: 
- 
+  position: relative;
+  top: 400px;
+  right: 0px;
 }
+
+.div{
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
