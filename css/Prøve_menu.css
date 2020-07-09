@@ -44,7 +44,9 @@ body {
 }
 
 .prev { left:  0 }
+
 .next { right: 0 }
+
 
 
 #nav {
@@ -85,6 +87,7 @@ body {
 #inp7:checked ~ #seven,
 #inp8:checked ~ #eight,
 #inp9:checked ~ #nine {
+  position: absolute;
   z-index: 10;
 }
 
@@ -114,7 +117,11 @@ body {
   color: white;
   opacity: 70%;
   margin: 0px;
+  position: relative;
   z-index:11; 
+
+  left: 0;
+  right: 0;
   
 }
 
@@ -124,6 +131,7 @@ body {
   position: relative;
   left: 900px; 
   top: 400px;
+  
 }
 
 .left {
@@ -131,6 +139,7 @@ body {
   position: relative;
   top: 400px;
   right: 0px;
+
 }
 
 
