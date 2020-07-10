@@ -1,186 +1,131 @@
+/*Billede slider 1 start*/
 
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
 
 body {
-  font-family: Arial, sans-serif;
-  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
-  background-size: cover;
-  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  width: 960px;
+  height: 740px;
+  position: relative;
 }
 
 
-
-
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #06D85F;
+#container input{
+  display: none;
+  position: relative;
+  margin: 0px;
+  bottom: 30px;
 }
 
-.overlay {
-  position: fixed;
+.images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+}
+
+.prev, .next {
+  height: 100%;
+  width: 12%;
+  position: absolute;
   top: 0;
-  bottom: 0;
+  cursor: pointer;
+  transition: .15s;
+  z-index: 100;
+  opacity: 0%;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(10, 10, 10, .5);
+}
+
+.prev { left:  0 }
+.next { right: 0 }
+
+
+#nav {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  cursor: arrow;
+  z-index: 100;
+}
+
+.dots {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, .7);
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dots:hover {
+  background: rgba(245, 245, 245, .7);
+}
+
+#one, #two, #three {
+  z-index: -1;
+}
+
+#inp1:checked ~ #one,
+#inp2:checked ~ #two,
+#inp3:checked ~ #three {
+  z-index: 10;
+}
+
+#inp1:checked ~ #nav #dot1, 
+#inp2:checked ~ #nav #dot2,
+#inp3:checked ~ #nav #dot3 {
+  background: white;
+}
+
+.arrow:hover{
+  cursor: pointer;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  opacity: 70%;
+  margin: 0px;
+  position: relative;
+  z-index:11; 
+
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
+  
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   position: relative;
-  transition: all 5s ease-in-out;
+  left: 900px; 
+  top: 400px;
+  
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
-
-
-
-
-
-
-/*
-  .popup {
-  display:none;
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
+.left {
+  transform: rotate(135deg);
+  position: relative;
+  top: 400px;
   right: 0px;
-}
-
-
-.popup .blanket {
-  background-color: rgba(0,0,0,.7);
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-}
-
-.popup .content{
-  box-sizing: border-box;
-  width: 960px;
-  background-color: white;
-}
-
-.popup .content2{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-}
-
-.koverskrift{
-  font-family: playfair display;
-  font-size: 35px;
 
 }
 
-.telefon strong{
-  font-family: avenir;
-  font-size: 16px;
-  padding top: 10px;
-}
-
-.telefon p{
-  font-family: avenir;
-  font-size: 16px;
-  line-height: 10px;
-  margin: 0px;
-  margin-top: 2px;
-
-}
-
-.email strong{
-  font-family: avenir;
-  font-size: 16px;
-  padding top: 10px;
-}
-
-.email p{
-  font-family: avenir;
-  font-size: 16px;
-  line-height: 10px;
-  margin: 0px;
-  margin-top: 2px;
-
-}
-
-.adresse strong{
-  font-family: avenir;
-  font-size: 16px;
-  padding top: 10px;
-
-}
-
-.adresse p{
-  font-family: avenir;
-  font-size: 16px;
-  margin: 0px;
-  margin-top: 2px;
-
-}
-
-
-
-
-
-.maps p iframe{
-align-content: center;
-}
-
-
-
-
-
+/*billede slider 1 slut*/

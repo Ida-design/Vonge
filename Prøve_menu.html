@@ -1,67 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>footer</title>
+
+	<meta charset="utf-8">
+	<title>slideshow</title>
 	<link rel="stylesheet" type="text/css" href="css/Prøve_menu.css">
-	<link rel="icon" href="img/Logo_56x56px.png">
-
 </head>
-
-<div class="box">
-	<li><a class="button" href="#popup1">Kontakt</a></li>
-</div>
-
-<div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Here i am</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-		</div>
-	</div>
-</div>
-
-<!--
-<div class="popup">
-	<div class="blanket"></div>
-	<div class="content">
-
-		<div class="koverskrift">
-			<h2>Kontakt</h2>
-		</div>
-	<div class="content2">	
-		
-		<div class="telefon">
-			<strong>Telefon</strong>
-			<p>+45 40 20 26 53</p>
-		</div>
-		
-		<div class="email">
-			<strong>E-mail</strong>
-			<p>ibvonge@live.dk</p>
-		</div>
-
-		<div class="adresse">
-			<strong>Adresse</strong>
-			<p>	Herningvej 51<br>
-			DK-8600 Silkeborg</p>
-		</div>
-	</div>
-
-		<div class="maps">
-			<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.241326605112!2d9.496677216413419!3d56.1529319806621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b8c876e7e4aab%3A0x7ac144ab7b23abf0!2sHerningvej%2051%2C%208600%20Silkeborg!5e0!3m2!1sda!2sdk!4v1594383248617!5m2!1sda!2sdk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
-		</div>
-
-		<button class="close">Luk</button>	
-	</div>
-	</div>
-</div>
--->
-
 <body>
 
-<footer>
 
-	</footer>
+  <div id='container'>
+  	
+  	<div class="arrow right"></div>
+   	<div class="arrow left"></div>
+  
+    <input type='radio' name="image" id='inp1' checked>
+    <input type='radio' name="image" id='inp2' >
+    <input type='radio' name="image" id='inp3'>
+    
+    <div class='images' id='one'>
+      <img src='https://cdn.pixabay.com/photo/2018/09/12/19/06/alpine-3673008_1280.jpg'>
+      
+      <label for='inp3' class='prev'></label>
+      <label for='inp2' class='next'></label>
+    </div>
+        
+    <div class='images' id='two'>
+      <img src='https://cdn.pixabay.com/photo/2017/01/19/23/46/panorama-1993645_1280.jpg'>
+      
+      <label for='inp1' class='prev'></label>
+      <label for='inp3' class='next'></label>
+    </div>
+        
+    <div class='images' id='three'>
+      <img src='https://cdn.pixabay.com/photo/2016/12/11/12/02/bled-1899264_1280.jpg'>
+      
+      <label for='inp2' class='prev'></label>
+      <label for='inp1' class='next'></label>
+    </div>
+    
+    <div id='nav'>
+      <label class='dots' id='dot1' for='inp1'></label>
+      <label class='dots' id='dot2' for='inp2'></label>
+      <label class='dots' id='dot3' for='inp3'></label>
+    </div>
+  </div>
 
 </body>
+<footer></footer>
+
 </html>
+
