@@ -958,6 +958,10 @@ ul li img{
   font-family: playfair display;
   font-size: 35px;
   line-height: 40px;
+  padding-bottom: 20px;
+  position: relative;
+  left: 20px;
+
 }
 .popup .close {
   position: absolute;
@@ -984,5 +988,82 @@ ul li img{
   .popup{
     width: 70%;
   }
+
 }
+
+.maps p iframe{
+	padding-top: 20px;
+}
+
+.telefon strong{
+  font-family: avenir;
+  font-size: 14px;
+  position: relative;
+  left: 20px;
+ 
+}
+
+.telefon p{
+  font-family: avenir;
+  font-size: 14px;
+  line-height: 5px;
+  margin: 0px;
+  text-align: left;
+  position: relative;
+  left: 20px;
+
+}
+
+.email strong{
+  font-family: avenir;
+  font-size: 14px;
+  position: relative;
+  left: 20px;
+  
+}
+
+.email p{
+  font-family: avenir;
+  font-size: 14px;
+  line-height: 5px;
+  margin: 0px;
+  text-align: left;
+  position: relative;
+  left: 20px;
+
+}
+
+.adresse strong{
+  font-family: avenir;
+  font-size: 14px;
+  position: relative;
+  left: 20px;
+  
+
+}
+
+.adresse p{
+  font-family: avenir;
+  font-size: 14px;
+  margin: 0px;
+  text-align: left;
+  line-height: 20px;
+  position: relative;
+  bottom: 7px;
+  left: 20px;
+
+}
+
+.telefon {
+	margin-bottom: 40px;
+}
+
+.email{
+	margin-bottom: 40px;	
+}
+
+.adresse{
+	padding: 0px;	
+}
+
 
