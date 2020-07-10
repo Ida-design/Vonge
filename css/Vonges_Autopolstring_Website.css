@@ -952,6 +952,7 @@ ul li img{
   position: relative;
   transition: all 0s ease-in-out;
   z-index: 300;
+  opacity: 90%;
 }
 
 .popup h2 {
