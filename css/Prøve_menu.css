@@ -1,316 +1,76 @@
 
+.footer{
 
-*{
-  box-sizing: border-box;
-  margin: 0px;
-  padding-bottom: 0px;
-  width: 1920px;
-  padding: 0px;
-
-
-}
-
-div{
-  margin: 0px;
-  padding: 0px;
-}
-
-footer{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 2%;
-
+  position: relative;
+  top: 130px;
+  margin-top: 20px;
+  max-width: 1920px;
+  overflow: hidden;
 }
 
 
-.footer p {
+.kontakt p{
   font-family: avenir;
   font-size: 14px;
-  color: black;
+  line-height: 25px;
   text-align: left;
-  line-height: 23px;
-  display: flex;
+  position: relative;
+  top: 195px;
+  left: 50px; 
 }
-
-
 
 .åbning h2{
   font-family: playfair display;
   font-size: 35px;
-  padding bottom: 20px;
-  margin: 0px;
-  text-align: center;
+  line-height: 40px;
+  position: relative;
+  bottom: 10px;
+  left: 855px;
 }
-
-
 
 .åbning p{
   font-family: avenir;
   font-size: 14px;
   line-height: 20px;
-  margin:0px;
-  padding-top: 10px;
   text-align: center;
   position: relative;
-  left: 855px;
-  top: 20px;
+  bottom: 25px;
 }
 
-
-.åbning a img{
-  padding: 0px 20px;
-  cursor: pointer;
-  width: 48px;
-  height: 20px;
-  max-width: 50px;
-  max-height: 300px;
+.åbning a{
   position: relative;
-  left: 925px;
-  top: 40px;
+  left: 958px;
+  top: 15px;
 }
 
 
-.åbning{
-max-width: 250px;
-height: 300px;
-margin: 0px;
-position: relative;
-top: 20px;
-position: absolute;
-left: 0px
-
-
-}
-
-.kontakt{
-  max-width: 200px;
-  height: 300px;
-  margin: 0px;
-  border: 0px;
-  display: inline-block;
-  float: left;
+.logoslut img{
   position: relative;
-  top: 10px;
-
-
+  left: 1747px;
+  bottom: 140px;
 }
 
-.logoslut{
-  width: 125px;
-  height: 125px;
-  display: inline-block;
-  float: right;
+
+.footer_bottom{
   position: relative;
-  top: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-#container4 {
-  width: 960px;
-  height: 740px;
-  position: relative;
-  margin: 0px;
-  bottom: 30px;
-}
-
-
-#container4 input{
-  display: none;
-}
-
-.images4 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.images4 img {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-}
-
-.prev4, .next4 {
-  height: 100%;
-  width: 12%;
-  /*background: rgba(10, 10, 10, .3);*/
- /* position: absolute;
-  top: 0;
-  /*cursor: pointer;*/
-  /*transition: .15s;
-  z-index: 100;
-  margin: 0px;
-}
-
-.prev4:hover, .next4:hover {
-  cursor: pointer;
-  /* background: rgba(10, 10, 10, .5);*/
-/*}
-
-.prev4 { left:  0 }
-
-.next4 { right: 0 }
-
-
-
-#nav4 {
-  width: 100%;
-  height: 35px;
-  position: absolute;
-  bottom: 0px;
+  top: 100px;
   text-align: center;
-  cursor: arrow;
-  z-index: 100;
+  font-family: avenir;
+  font-size: 12px;
+
 }
-.dots4{
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  border-radius: 50%;
-  background: rgba(10, 10, 10, .7);
-  position: relative;
-  display: inline-block;
+
+.footer_bottom a{
+  color: black;
+  text-decoration: none;
+}
+
+
+.footer_bottom a:hover{
+  font-weight: bolder; 
   cursor: pointer;
 
 }
-
-.dots4:hover {
- *background: rgba(245, 245, 245, .7);
-}
-
-#one4, #two4, #three4, #four4, #five4, #six4, #seven4, #eight4, #nine4 {
-  z-index: -1;
-}
-
-#inp14:checked ~ #one4,
-#inp24:checked ~ #two4,
-#inp34:checked ~ #three4,
-#inp44:checked ~ #four4,
-#inp54:checked ~ #five4,
-#inp64:checked ~ #six4,
-#inp74:checked ~ #seven4,
-#inp84:checked ~ #eight4,
-#inp94:checked ~ #nine4 {
-  position: absolute;
-  z-index: 10;
-}
-
-#inp14:checked ~ #nav4 #dot14, 
-#inp24:checked ~ #nav4 #dot24,
-#inp34:checked ~ #nav4 #dot34,
-#inp44:checked ~ #nav4 #dot44,
-#inp54:checked ~ #nav4 #dot54,
-#inp64:checked ~ #nav4 #dot64,
-#inp74:checked ~ #nav4 #dot74,
-#inp84:checked ~ #nav4 #dot84,
-#inp94:checked ~ #nav4 #dot94 {
-  background: white;
-  opacity: 70%;
-}
-
-
-.arrow4:hover{
-  cursor: pointer;
-}
-
-.arrow4 {
-  border: solid white;
-  border-width: 0 6px 6px 0;
-  display: inline-block;
-  padding: 10px;
-  color: white;
-  opacity: 70%;
-  margin: 0px;
-  position: relative;
-  z-index:11; 
-
-  left: 0;
-  right: 0;
-  
-}
-
-.right4 {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  position: relative;
-  left: 900px; 
-  top: 400px;
-  
-}
-
-.left4 {
-  transform: rotate(135deg);
-  position: relative;
-  top: 400px;
-  right: 0px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
